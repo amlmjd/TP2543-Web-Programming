@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <style>
+  body {
+  font: 14px "Montserrat", sans-serif;
+  line-height: 1.8;
+}
+    .bg-1 {
+      background-color: #c8b2f3; /* Orange */
+      color: #2f1c60;
+  }
+  .bg-2 {
+      background-color: #dcd6f7; /* Dark Blue */
+      color: #2f1c60;
+    }
+    .bg-3 {
+        background-color: #c8b2f3; /* White */
+        color: #2f1c60;
+    }
+    .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  .bg-4 {
+    background-color: #150b31;
+    color: #ffffff;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #150b31;
+}
+  </style>
+</head>
+<body id="myPage">
+
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#hello">Hello</a></li>
+        <li><a href="#who">Who</a></li>
+        <li><a href="#where">Where</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<div class="container-fluid bg-1 text-center" id="hello">
+  <h3>Hello</h3>
+  <img src="face2.jpg" class="img-circle" width="20%" alt="bird" style="padding: ;">
+  <h3>I'm Amal Majdia</h3>
+</div>
+
+<div class="container-fluid bg-2 text-center" id="who">
+  <h3>Who Am I?</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="image1.jpg"  class="img-responsive" alt="Image" style="display:inline">
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="image3.jpg"  class="img-responsive" alt="Image" style="display:inline">
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="image2.jpg"  class="img-responsive" alt="Image" style="display:inline">
+    </div>
+  </div>
+</div>
+ 
+<div class="container-fluid bg-3 text-center" id="where">
+  <h3>Where To Find Me?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+ <div class="container-fluid" style="background-color: #523b8c" id="contact">
+  <h3 class="text-center" style="color: #ffffff" >Contact Me</h3>
+  <div class="row">
+    <div class="col-sm-5" style="color: #ffffff">
+      <p>Contact me and I'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Alor Setar, Kedah</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +60184734516</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> a174807@siswa.ukm.edu.my</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid bg4 text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Copyright © Amal Majida 2021</p>
+</footer>
+
+</body>
+</html>
